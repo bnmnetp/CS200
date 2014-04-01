@@ -3,3 +3,4 @@
 */
 
 bool isprime(long);
+long nextprime();

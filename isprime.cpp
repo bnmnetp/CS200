@@ -9,11 +9,10 @@ using namespace std;
 int main (int argc, char const *argv[])
 {
     long tn = 1;
-    cin >> tn;
-    while (! cin.eof() ) {
-        bool res = isprime(tn);
-        cout << tn << "\t" << res << endl;
-        cin >> tn;
+    long limit;
+    limit = atol(argv[1]);
+    for(int i = 0; i < limit; i++) {
+        cout << nextprime() << endl;
     }
 
     return 0;
